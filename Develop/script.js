@@ -107,8 +107,8 @@ function generatePassword() {
   generatenumber();
   console.log(numberCheck);
 
-  var charater ;
-  var password = " ";
+  var charater = " ";
+  var password1 = " ";
 
   if (upperCaseCheck && lowerCaseCheck && specialCharaterCheck && numberCheck){
     charater += upperCase + lowerCase + specialCharater + number;
@@ -132,12 +132,12 @@ function generatePassword() {
     charater += upperCase + number;
 
   } else if (lowerCaseCheck && specialCharaterCheck) {
-    charater = lowerCase + specialCharater;
+    charater += lowerCase + specialCharater;
 
   } else if (lowerCaseCheck && numberCheck) {
     charater += lowerCase + number;
 
-  } else if (specialCharaterCheck && numberCheck) {
+  } else if (specialCharaterCheck && numberCheck){
     charater += specialCharater + number;
 
   }else if (upperCaseCheck) {
@@ -153,13 +153,14 @@ function generatePassword() {
     charater += number;
 
   } else {
-     
+     charater  === " ";
   }
   
-  for( i =0 ; i< passwordLenght ; i++ ) {
-    password += charater.charAt(math.floor(math.random ()* charater.Lenght )) ;
- }
-return password;
+  for( var i =0 ; i < passwordLenght ; i++ ) {
+    password1 += charater.substring(Math.floor(Math.random ()* charater.Lenght )) ;
+  }
+ return password1;
+
 }
 
 
@@ -176,7 +177,6 @@ return password;
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 
 }
