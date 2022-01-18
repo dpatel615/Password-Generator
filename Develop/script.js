@@ -29,12 +29,10 @@ function generateupperCase () {
 
   if (upperCaseCheck === "yes" || upperCaseCheck === "y") {
     upperCaseCheck = true;
-    generateupperCase();
 
- } else if (upperCaseCheck === "no" || upperCaseCheck === "n") {
+  } else if (upperCaseCheck === "no" || upperCaseCheck === "n") {
    upperCaseCheck = false;
-   generateupperCase();
-
+ 
  } else {
     alert("Please write yes/no!");
  }
@@ -46,11 +44,11 @@ lowerCaseCheck = prompt(" Do you want to inculded lowecase charaters in you pass
   
 if (lowerCaseCheck === "yes" || lowerCaseCheck === "y") {
  lowerCaseCheck = true;
- generatelowerCase();
+ 
 
 } else if (lowerCaseCheck === "no" || lowerCaseCheck === "n"){
   lowerCaseCheck = false;
-  generatelowerCase();
+ 
 
 }else {
   alert("please write yes/no!");
@@ -64,11 +62,11 @@ function generatespecialCharater () {
 
   if (specialCharaterCheck === "yes" || specialCharaterCheck === "y"){
     specialCharaterCheck = true;
-    generatespecialCharater();
+  
 
   }else if (specialCharaterCheck === "no" || specialCharaterCheck === "n") {
     specialCharaterCheck = false;
-    generatespecialCharater();
+    
 
   } else {
     alert("please write yes/no?");
@@ -82,11 +80,11 @@ function generatenumber () {
 
   if ( numberCheck === "yes" || numberCheck === "y") {
     numberCheck = true;
-    generatenumber();
+  
 
   } else if (numberCheck === "no" || numberCheck === "n") {
     numberCheck = false;
-    generatenumber();
+    
 
   } else {
     alert ("please enter yes or no");
@@ -155,7 +153,7 @@ function generatePassword() {
     charater += number;
 
   } else {
-    charater === " ";
+     
   }
   
   for( i =0 ; i< passwordLenght ; i++ ) {
