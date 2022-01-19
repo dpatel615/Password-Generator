@@ -107,57 +107,57 @@ function generatePassword() {
   generatenumber();
   console.log(numberCheck);
 
-  var charater = " ";
+  var charater = " " ;
   var password1 = " ";
 
   if (upperCaseCheck && lowerCaseCheck && specialCharaterCheck && numberCheck){
-    charater += upperCase + lowerCase + specialCharater + number;
+    charater = upperCase + lowerCase + specialCharater + number;
 
   } else if (upperCaseCheck && lowerCaseCheck && specialCharaterCheck) {
-    charater += upperCase + lowerCaseCheck + specialCharater ;
+    charater = upperCase + lowerCase + specialCharater ;
 
   } else if (upperCaseCheck && specialCharater && numberCheck) {
-    charater += upperCase + specialCharater + number ;
+    charater = upperCase + specialCharater + number ;
 
   } else if ( lowerCaseCheck && specialCharater && numberCheck) {
-    charater += lowerCase + specialCharater + number;
+    charater = lowerCase + specialCharater + number;
 
   } else if (  upperCaseCheck && lowerCaseCheck) {
-    charater += upperCase + lowerCase;
+    charater = upperCase + lowerCase;
 
   } else if ( upperCaseCheck && specialCharaterCheck) {
-    charater += upperCase + specialCharater;
+    charater = upperCase + specialCharater;
 
   } else if (upperCaseCheck && numberCheck) {
-    charater += upperCase + number;
+    charater = upperCase + number;
 
   } else if (lowerCaseCheck && specialCharaterCheck) {
-    charater += lowerCase + specialCharater;
+    charater = lowerCase + specialCharater;
 
   } else if (lowerCaseCheck && numberCheck) {
-    charater += lowerCase + number;
+    charater = lowerCase + number;
 
   } else if (specialCharaterCheck && numberCheck){
-    charater += specialCharater + number;
+    charater = specialCharater + number;
 
   }else if (upperCaseCheck) {
-    charater += upperCaseCheck;
+    charater = upperCase;
 
   } else if (lowerCaseCheck) {
-    charater += lowerCase;
+    charater = lowerCase;
 
   } else if (specialCharaterCheck) {
-    charater += specialCharater;
+    charater = specialCharater;
 
   } else if (numberCheck) {
-    charater += number;
-
+    charater = number;
+ 
   } else {
-     charater  === " ";
+     charater = " ";
   }
   
   for( var i =0 ; i < passwordLenght ; i++ ) {
-    password1 += charater.substring(Math.floor(Math.random ()* charater.Lenght )) ;
+    password1 += charater[(Math.floor(Math.random ()* charater.length ))] ;
   }
  return password1;
 
