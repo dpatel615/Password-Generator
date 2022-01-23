@@ -15,6 +15,8 @@ This allow to generate the password with certain Criteria
 
 ## Mock-up
 
+https://github.com/dpatel615/Password-Generator/blob/main/Assets/03-javascript-homework-demo.png
+
 
 
 
