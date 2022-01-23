@@ -19,5 +19,11 @@ https://github.com/dpatel615/Password-Generator/blob/main/Assets/03-javascript-h
 
 
 
+## Deployed Application Link
 
+The deployed GitHub page for this web application can be found:
+https://dpatel615.github.io/Password-Generator
+
+The GitHub repository for this web application can be found:
+https://github.com/dpatel615/Password-Generator
 
